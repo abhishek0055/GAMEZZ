@@ -1,0 +1,101 @@
+body{
+    background-image: url("bg.png");
+    background-size: cover;
+}
+
+h1{
+    color:white;
+    font-size:40px;
+    text-align:center;
+    text-decoration: underline;
+    animation: headingText 2s steps(2) 0s;
+    
+}
+@keyframes headingText {
+    from{font-size:20px;}
+    to{
+        font-size:40px;
+    }
+}
+.username{
+    font-style: italic;
+    animation: usernameAni 4s linear 4s ;
+}
+@keyframes usernameAni {
+     from{
+        transform:scale(0);
+       
+     }
+     to{
+        transform:scale(1.2);
+        margin-top:100px;
+        color:deeppink;
+     }
+}
+.logo{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+   border-radius:50%;
+   width:150px;
+   transition:box-shadow 2s linear 0s;
+   animation: rotateLogo 4s linear 0s 1 ;
+}
+
+.logo:hover{
+   box-shadow: 4px 4px 2px black;
+}
+@keyframes rotateLogo {
+   from{transfrom:rotate(0deg);
+    box-shadow: 4px 4px 2px black;}
+   to{transform:rotate(360deg);
+    box-shadow: 8px 8px 5px black;}
+
+}
+.gaming{
+    width:40%;
+    transform:skew(-10deg);
+}
+.g{
+    border:4px solid rgb(189, 19, 110); 
+    
+    padding:10px;
+    font-size:15px;
+   
+}
+.menu{
+    width:40%;
+    display:flex;
+    justify-content: space-evenly;
+}
+.menu>b>a{
+  
+    font-size: 20px;
+    color:rgb(189, 19, 110);
+    text-decoration: none;
+}
+.navbar{
+    margin-right:200px;
+    margin-top:20px;
+    height:40px;
+    display:flex;
+    justify-content: space-between;
+    color:rgb(189, 19, 110);
+    
+}
+.gameImage{
+  
+    margin-top:150px;
+    display:flex;
+    justify-content: center;
+}
+.gameImage>a{
+    margin:20px;
+    
+}
+
+.gameImg {
+    height:300px;
+    width:300px;
+    border-radius:10px;
+}

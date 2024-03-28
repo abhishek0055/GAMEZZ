@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/game.css">
+</head>
+<body>
+    <div class="mainGameBox">
+        
+        <div class="navbar">
+            <div class="gaming"><b class="g">GAMEZ</b></div>
+            <div class="menu">
+                
+                <b><a href="/gamez/<%=value.username%>/<%=value.id%>/edit">Edit</a></b> 
+                <b><a href="/gamez/<%=value.username%>/<%=value.id%>/delete">Delete</a></b> 
+                
+            </div>
+        </div>
+        <div class="welcome">
+            <h1 class="username">WELCOME : <%= value.username%></h1>
+             <h1>LET THE GAME BEGIN</h1>
+             <img src="/logo.png" class="logo">
+        </div>
+        <div class="gameImage">
+           <a href="/gamez/<%=value.id%>/simon"><img src="/simon.png" class="gameImg"></a>
+           <a href="/gamez/<%=value.id%>/tictactoe"><img src="/ttt.png" class="gameImg"></a>
+        </div>
+    </div>
+</body>
+</html>

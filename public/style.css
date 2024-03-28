@@ -1,0 +1,49 @@
+body{
+    background-image: url("bg.png");
+    background-size: cover;
+}
+.form{
+    height:400px;
+    width:300px;
+    border:2px solid rgb(213, 229, 229);
+    margin:auto;
+    margin-top:200px;
+    border-radius:20px;
+    background-color: white;
+    transition: 1s;
+}
+.form:hover{
+    box-shadow: 10px 10px 5px black;
+}
+
+.heading{
+    text-align:center;
+    margin:30px;
+  
+    background-color: white;
+}
+.innerForm{
+
+   text-align: center;
+}
+input{
+    height:30px;
+    width:250px;
+    border-radius:30px;
+    text-align:center;
+    margin:5px;
+   border:0px;
+    background-color: rgba(128, 128, 128, 0.423);
+
+}
+button{
+    height:30px;
+    width:140px;
+    border-radius:10px;
+    margin-top:10px;
+    color:white;
+    background-color: rgb(241, 161, 236);
+    border:0px;
+    transition: 1s;
+}
+
